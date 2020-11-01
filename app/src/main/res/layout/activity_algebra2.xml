@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="7"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lin"
+            android:textSize="40sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:layout_margin="10dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the size of matrix"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/row_box"
+
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/box_for_text_view2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            />
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/row_box"
+            android:layout_alignParentBottom="true"
+            />
+        <EditText
+            android:id="@+id/column_box"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/box_for_text_view2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/x"/>
+
+        <Button
+            android:id="@+id/generatebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/column_box"
+            android:layout_alignTop="@id/row_box"
+
+
+
+            android:text="generate" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        android:layout_margin="10dp"
+        >
+
+
+        <GridView
+            android:id="@+id/algebra_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/algebra_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/box_for_text_view2"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Easy calc</string>
+    <string name="lin">Linear Algebra</string>
+    <string name="stat">Statistics</string>
+    <string name="calc"> Calculator</string>
+    <string name="conv">Conversions</string>
+
+    <string-array name="weights">
+        <item>KG</item>
+        <item>g</item>
+        <item>pound</item>
+    </string-array>
+
+    <string-array name="distances">
+        <item>KM</item>
+        <item>m</item>
+        <item>inches</item>
+    </string-array>
+
+    <string-array name="volumes">
+        <item>l</item>
+        <item>ml</item>
+    </string-array>
+
+    <string name="distance_prompt">km</string>
+    <string name="weight_prompt">kg</string>
+    <string name="volume_prompt">ml</string>
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="6"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lin"
+            android:textSize="40sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the matrix elements"
+            android:textSize="25sp"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <EditText
+            android:id="@+id/box1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="40sp"
+            android:layout_marginStart="60dp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+
+        <EditText
+            android:id="@+id/box2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/box1"
+            android:textSize="40sp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/box1"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+
+        <EditText
+            android:id="@+id/box3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/box1"
+            android:textSize="40sp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/box2"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+
+        <EditText
+            android:id="@+id/box4"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="40sp"
+            android:layout_alignEnd="@id/box1"
+            android:layout_below="@id/box1"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+
+        <EditText
+            android:id="@+id/box5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="40sp"
+            android:layout_alignEnd="@id/box2"
+            android:layout_below="@id/box2"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+
+        <EditText
+            android:id="@+id/box6"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="40sp"
+            android:layout_alignEnd="@id/box3"
+            android:layout_below="@id/box3"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+
+        <EditText
+            android:id="@+id/box7"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="40sp"
+            android:layout_alignEnd="@id/box1"
+            android:layout_below="@id/box4"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+        <EditText
+            android:id="@+id/box8"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="40sp"
+            android:layout_alignEnd="@id/box5"
+            android:layout_below="@id/box4"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+
+        <EditText
+            android:id="@+id/box9"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="40sp"
+            android:layout_alignEnd="@id/box6"
+            android:layout_below="@id/box4"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:background="@drawable/box_for_text_view"/>
+
+
+
+        <Button
+            android:id="@+id/ref"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box7"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:text="REF"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/transpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box7"
+            android:layout_toEndOf="@+id/ref"
+            android:layout_alignTop="@id/ref"
+            android:text="transpose"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/transpose"
+            android:layout_alignTop="@id/ref"
+            android:text="inverse"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESULT"
+
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/algebra_result_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:background="@drawable/box_for_text_view2"/>
+        <TextView
+            android:id="@+id/det_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

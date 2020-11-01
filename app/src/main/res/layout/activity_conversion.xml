@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="conversion"
+            android:textSize="40sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance conversion"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark"/>
+
+        <Spinner
+
+            android:id="@+id/distance1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:entries="@array/distances"
+            android:prompt="@string/distance_prompt"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/distance_text1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/distance1"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginEnd="5dp"
+
+            android:layout_alignTop="@+id/distance1"
+            android:background="@drawable/box_for_text_view2"/>
+        <EditText
+            android:id="@+id/distance_text2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/distance_text1"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_alignTop="@+id/distance_text1"
+            android:background="@drawable/box_for_text_view2"/>
+        <Spinner
+
+            android:id="@+id/distance2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:entries="@array/distances"
+            android:prompt="@string/distance_prompt"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/distance_text2"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume conversion"
+            android:layout_marginTop="20dp"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark"/>
+
+        <Spinner
+
+            android:id="@+id/weights1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:entries="@array/weights"
+            android:prompt="@string/weight_prompt"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/weight_text1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/weights1"
+            android:maxLines="1"
+            android:inputType="number"
+            android:maxLength="5"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/weights1"
+            android:background="@drawable/box_for_text_view2"/>
+        <EditText
+            android:id="@+id/weight_text2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/weight_text1"
+            android:maxLines="1"
+            android:layout_alignTop="@+id/weight_text1"
+            android:background="@drawable/box_for_text_view2"/>
+        <Spinner
+
+            android:id="@+id/weights2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:entries="@array/weights"
+            android:prompt="@string/weight_prompt"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/weight_text2"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="volume_conversion"
+            android:layout_marginTop="20dp"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark"/>
+
+
+        <Spinner
+
+            android:id="@+id/volume1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:entries="@array/volumes"
+            android:prompt="@string/volume_prompt"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/volume_text1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/volume1"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/volume1"
+            android:background="@drawable/box_for_text_view2"/>
+        <EditText
+            android:id="@+id/volume_text2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/volume_text1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_alignTop="@+id/volume_text1"
+            android:background="@drawable/box_for_text_view2"/>
+        <Spinner
+
+            android:id="@+id/volume2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:entries="@array/volumes"
+            android:prompt="@string/volume_prompt"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/volume_text2"
+            android:gravity="end"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
