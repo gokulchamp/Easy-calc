@@ -6,4 +6,4 @@ A all in one type calculator.it contains
 * a linear algebra calculator
 * a unit converter.
 
-**made using java
+**Made using java**
